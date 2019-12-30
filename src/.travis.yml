@@ -1,0 +1,7 @@
+language: generic
+sudo: required
+servies:
+  - docker
+
+before_install:
+  - docker build -t wbarlow/docker-react -f Dockerfile.dev .
